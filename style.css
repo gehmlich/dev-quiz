@@ -81,3 +81,25 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #3e8e41;
 }
+
+legend {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+legend:after {
+  content: " -";
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: none;
+}
+
+fieldset.collapsed {
+  height: 20px;
+  overflow: hidden;
+}
+
+fieldset.collapsed legend:after {
+  content: " +";
+}
