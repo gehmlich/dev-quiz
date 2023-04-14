@@ -1,6 +1,4 @@
-const header = document.querySelector("h1");
-
-header.addEventListener("click", () => {
+document.getElementById("toggle-mode-btn").addEventListener("click", () => {
   for (const fieldset of fieldsets) {
     fieldset.classList.toggle("collapsed");
   }
