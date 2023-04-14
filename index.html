@@ -9,318 +9,40 @@
     <h1>Softwareentwicklungs-Quiz</h1>
     <button id="toggle-mode-btn">Toggle</button>
     <form>
-      <fieldset class="collapsed">
+      <fieldset>
         <legend>Allgemeine Einführung</legend>
-        <p>
-          1. Welches Tier wird oft als Metapher für agile Softwareentwicklung
-          verwendet?
-        </p>
-        <label for="q1a"
-          ><input type="radio" id="q1a" name="q1" value="a" /> Affe 🐵 </label
-        ><br />
-        <label for="q1b"
-          ><input type="radio" id="q1b" name="q1" value="b" /> Faultier
-          🦥</label
-        ><br />
-        <label for="q1c"
-          ><input type="radio" id="q1c" name="q1" value="c" /> Vogel 🐦</label
-        ><br />
-        <label
-          for="q1d"
-          title="Der Pinguin ist auch ein Symbol für Ausdauer, Anpassungsfähigkeit und Gemeinschaft, die alle wichtige Eigenschaften in der Softwareentwicklung sind. Pinguine leben in einer rauen und unvorhersehbaren Umgebung und müssen sich schnell an Veränderungen anpassen, um zu überleben. In ähnlicher Weise müssen Entwickler in der Softwareentwicklung ständig auf Veränderungen in Technologie und Anforderungen reagieren, um erfolgreiche Programme zu erstellen."
-          ><input type="radio" id="q1d" name="q1" value="d" /> Pinguin 🐧</label
-        ><br />
-
-        <p>
-          2. Welches Schlüsselwort wird verwendet, um eine Variable in der
-          Programmierung zu deklarieren?
-        </p>
-        <label for="q2a"
-          ><input type="radio" id="q2a" name="q2" value="a" /> int</label
-        ><br />
-        <label for="q2b"
-          ><input type="radio" id="q2b" name="q2" value="b" /> var</label
-        ><br />
-        <label for="q2c"
-          ><input type="radio" id="q2c" name="q2" value="c" /> double</label
-        ><br />
-        <label for="q2d"
-          ><input type="radio" id="q2d" name="q2" value="d" /> string</label
-        ><br />
+        <div id="q1"></div>
       </fieldset>
-
-      <fieldset class="collapsed">
+      <fieldset>
         <legend>Entwicklungsumgebung</legend>
-        <p>
-          3. Welches Entwicklerwerkzeug wurde von Microsoft entwickelt und ist
-          eine integrierte Entwicklungsumgebung für Windows?
-        </p>
-        <label for="q3a"
-          ><input type="radio" id="q3a" name="q3" value="a" /> Visual
-          Studio</label
-        ><br />
-        <label for="q3b"
-          ><input type="radio" id="q3b" name="q3" value="b" /> Atom</label
-        ><br />
-        <label for="q3c"
-          ><input type="radio" id="q3c" name="q3" value="c" /> Eclipse</label
-        ><br />
-        <label for="q3d"
-          ><input type="radio" id="q3d" name="q3" value="d" /> NetBeans</label
-        ><br />
-
-        <p>
-          4. Welche Art von Fehler tritt auf, wenn ein Programm auf einen
-          unerwarteten Wert zugreift oder eine ungültige Aktion ausführt?
-        </p>
-        <label for="q4a"
-          ><input type="radio" id="q4a" name="q4" value="a" />
-          Syntaxfehler</label
-        ><br />
-        <label for="q4b"
-          ><input type="radio" id="q4b" name="q4" value="b" />
-          Laufzeitfehler</label
-        ><br />
-        <label for="q4c"
-          ><input type="radio" id="q4c" name="q4" value="c" />
-          Kompilierungsfehler</label
-        ><br />
-        <label for="q4d"
-          ><input type="radio" id="q4d" name="q4" value="d" /> Semantischer
-          Fehler</label
-        ><br />
+        <div id="q2"></div>
       </fieldset>
-
-      <fieldset class="collapsed">
+      <fieldset>
         <legend>Variablen, Datentypen</legend>
-        <p>
-          5. Welcher Datentyp wird verwendet, um eine Ganzzahl in der
-          Programmierung zu speichern?
-        </p>
-        <label for="q5a"
-          ><input type="radio" id="q5a" name="q5" value="a" /> int</label
-        ><br />
-        <label for="q5b"
-          ><input type="radio" id="q5b" name="q5" value="b" /> double</label
-        ><br />
-        <label for="q5c"
-          ><input type="radio" id="q5c" name="q5" value="c" /> string</label
-        ><br />
-        <label for="q5d"
-          ><input type="radio" id="q5d" name="q5" value="d" /> boolean</label
-        ><br />
-
-        <p>
-          6. Was ist der Wert der Variable "x" nach Ausführung des folgenden
-          Codes? int x = 5; x += 2;
-        </p>
-        <label for="q6a"
-          ><input type="radio" id="q6a" name="q6" value="a" /> 5</label
-        ><br />
-        <label for="q6b"
-          ><input type="radio" id="q6b" name="q6" value="b" /> 2</label
-        ><br />
-        <label for="q6c"
-          ><input type="radio" id="q6c" name="q6" value="c" /> 7</label
-        ><br />
-        <label for="q6d"
-          ><input type="radio" id="q6d" name="q6" value="d" /> 3</label
-        ><br />
+        <div id="q3"></div>
       </fieldset>
-
-      <fieldset class="collapsed">
+      <fieldset>
         <legend>Bedingungen</legend>
-        <p>
-          7. Welches Schlüsselwort wird verwendet, um eine Bedingung in der
-          Programmierung zu definieren?
-        </p>
-        <label for="q7a"
-          ><input type="radio" id="q7a" name="q7" value="a" /> condition</label
-        ><br />
-        <label for="q7b"
-          ><input type="radio" id="q7b" name="q7" value="b" /> if</label
-        ><br />
-        <label for="q7c"
-          ><input type="radio" id="q7c" name="q7" value="c" /> switch</label
-        ><br />
-        <label for="q7d"
-          ><input type="radio" id="q7d" name="q7" value="d" /> while</label
-        ><br />
-
-        <p>
-          8. Welches Schlüsselwort wird verwendet, um eine Bedingung in der
-          Programmierung zu negieren?
-        </p>
-        <label for="q8a"
-          ><input type="radio" id="q8a" name="q8" value="a" /> not</label
-        ><br />
-        <label for="q8b"
-          ><input type="radio" id="q8b" name="q8" value="b" /> or</label
-        ><br />
-        <label for="q8c"
-          ><input type="radio" id="q8c" name="q8" value="c" /> but</label
-        ><br />
-        <label for="q8d"
-          ><input type="radio" id="q8d" name="q8" value="d" /> and</label
-        ><br />
+        <div id="q4"></div>
       </fieldset>
-      <fieldset class="collapsed">
+      <fieldset>
         <legend>Schleifen</legend>
-        <p>
-          9. Welches der folgenden Statements wird in einer Schleife verwendet,
-          um zur nächsten Iteration der Schleife zu springen?
-        </p>
-        <label for="q9a"
-          ><input type="radio" id="q9a" name="q9" value="a" /> return</label
-        ><br />
-        <label for="q9b"
-          ><input type="radio" id="q9b" name="q9" value="b" /> continue</label
-        ><br />
-        <label for="q9c"
-          ><input type="radio" id="q9c" name="q9" value="c" /> break</label
-        ><br />
-        <label for="q9d"
-          ><input type="radio" id="q9d" name="q9" value="d" /> exit</label
-        ><br />
-
-        <p>
-          10. Was ist der Wert von "i" nach Ausführung des folgenden Codes? int
-          i = 0; while(i < 5){ i++; }
-        </p>
-        <label for="q10a"
-          ><input type="radio" id="q10a" name="q10" value="a" /> 0</label
-        ><br />
-        <label for="q10b"
-          ><input type="radio" id="q10b" name="q10" value="b" /> 1</label
-        ><br />
-        <label for="q10c"
-          ><input type="radio" id="q10c" name="q10" value="c" /> 4</label
-        ><br />
-        <label for="q10d"
-          ><input type="radio" id="q10d" name="q10" value="d" /> 5</label
-        ><br />
+        <div id="q5"></div>
       </fieldset>
-
-      <fieldset class="collapsed">
-        <legend>Arrays (Collections)</legend>
-        <p>
-          11. Wie wird das erste Element in einem Array in der Programmierung
-          indiziert?
-        </p>
-        <label for="q11a"
-          ><input type="radio" id="q11a" name="q11" value="a" /> 0</label
-        ><br />
-        <label for="q11b"
-          ><input type="radio" id="q11b" name="q11" value="b" /> 1</label
-        ><br />
-        <label for="q11c"
-          ><input type="radio" id="q11c" name="q11" value="c" /> -1</label
-        ><br />
-        <label for="q11d"
-          ><input type="radio" id="q11d" name="q11" value="d" /> Es gibt kein
-          erstes Element</label
-        ><br />
-
-        <p>
-          12. Wie deklariert man ein Array namens "myArray" mit einer Länge von
-          5 in der Programmierung?
-        </p>
-        <label for="q12a"
-          ><input type="radio" id="q12a" name="q12" value="a" /> int myArray =
-          [5];</label
-        ><br />
-        <label for="q12b"
-          ><input type="radio" id="q12b" name="q12" value="b" /> int[] myArray =
-          5;</label
-        ><br />
-        <label for="q12c"
-          ><input type="radio" id="q12c" name="q12" value="c" /> int[] myArray =
-          new int[5];</label
-        ><br />
-        <label for="q12d"
-          ><input type="radio" id="q12d" name="q12" value="d" /> myArray[] =
-          {5};</label
-        ><br />
+      <fieldset>
+        <legend>Arrays</legend>
+        <div id="q6"></div>
       </fieldset>
-
-      <fieldset class="collapsed">
+      <fieldset>
         <legend>Methoden</legend>
-        <p>13. Was ist eine Methode in der Programmierung?</p>
-        <label for="q13a"
-          ><input type="radio" id="q13a" name="q13" value="a" /> Eine Funktion,
-          die einen Wert zurückgibt</label
-        ><br />
-        <label for="q13b"
-          ><input type="radio" id="q13b" name="q13" value="b" /> Eine Art
-          Schleife</label
-        ><br />
-        <label for="q13c"
-          ><input type="radio" id="q13c" name="q13" value="c" /> Ein
-          Variablenname</label
-        ><br />
-        <label for="q13d"
-          ><input type="radio" id="q13d" name="q13" value="d" /> Eine
-          Anweisung</label
-        ><br />
-
-        <p>14. Was ist der Zweck von Parametern in einer Methode?</p>
-        <label for="q14a"
-          ><input type="radio" id="q14a" name="q14" value="a" /> Um den
-          Rückgabewert der Methode zu definieren</label
-        ><br />
-        <label for="q14b"
-          ><input type="radio" id="q14b" name="q14" value="b" /> Um die
-          Sichtbarkeit der Methode zu definieren</label
-        ><br />
-        <label for="q14c"
-          ><input type="radio" id="q14c" name="q14" value="c" /> Um der Methode
-          zusätzliche Informationen zu übergeben</label
-        ><br />
-        <label for="q14d"
-          ><input type="radio" id="q14d" name="q14" value="d" /> Es gibt keinen
-          Zweck für Parameter in einer Methode</label
-        ><br />
+        <div id="q7"></div>
       </fieldset>
-
-      <fieldset class="collapsed">
+      <fieldset>
         <legend>Klassen</legend>
-        <p>15. Was ist eine Klasse in der Programmierung?</p>
-        <label for="q15a"
-          ><input type="radio" id="q15a" name="q15" value="a" /> Eine Funktion,
-          die einen Wert zurückgibt</label
-        ><br />
-        <label for="q15b"
-          ><input type="radio" id="q15b" name="q15" value="b" /> Eine Art
-          Schleife</label
-        ><br />
-        <label for="q15c"
-          ><input type="radio" id="q15c" name="q15" value="c" /> Eine Vorlage
-          für die Erstellung von Objekten</label
-        ><br />
-        <label for="q15d"
-          ><input type="radio" id="q15d" name="q15" value="d" /> Eine
-          Anweisung</label
-        ><br />
-
-        <p>16. Was ist ein Objekt in der Programmierung?</p>
-        <label for="q16a"
-          ><input type="radio" id="q16a" name="q16" value="a" /> Ein Name für
-          eine Variable</label
-        ><br />
-        <label for="q16b"
-          ><input type="radio" id="q16b" name="q16" value="b" /> Eine
-          Methode</label
-        ><br />
-        <label for="q16c"
-          ><input type="radio" id="q16c" name="q16" value="c" /> Eine Instanz
-          einer Klasse</label
-        ><br />
-        <label for="q16d"
-          ><input type="radio" id="q16d" name="q16" value="d" /> Ein spezielles
-          Zeichen in der Syntax</label
-        ><br />
+        <div id="q8"></div>
       </fieldset>
     </form>
-    <script src="script.js"></script>
+    <script src="load.js"></script>
+    <script src="collapse.js"></script>
   </body>
 </html>
