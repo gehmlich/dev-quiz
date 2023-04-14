@@ -1,0 +1,140 @@
+body {
+  background-color: #333333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #33eb91;
+  cursor: pointer;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffcd38;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="radio"]:checked {
+  background-color: #dd33fa;
+  border-color: #dd33fa;
+  color: #fff;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+legend {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+legend:after {
+  content: " -";
+  color: #ffffff;
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: none;
+}
+
+fieldset.collapsed {
+  height: 20px;
+  overflow: hidden;
+}
+
+fieldset.collapsed legend:after {
+  content: " +";
+  color: #ffffff;
+}
+
+#toggle-mode-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle-mode-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode #toggle-mode-btn {
+  background-color: #333;
+  color: #fff;
+  border-color: #fff;
+}
+
+body.dark-mode #toggle-mode-btn:hover {
+  background-color: #fff;
+  color: #333;
+}
