@@ -230,10 +230,9 @@ questions.forEach((q) => {
     el.addEventListener("change", () => {
       const selectedAnswer = el.value;
       if (selectedAnswer === q.correctAnswer) {
-
         el.classList.add("isCorrect");
       } else {
-        console.log("Incorrect answer selected for question", el.name);
+        el.classList.add("isIncorrect");
       }
     });
   });
