@@ -213,8 +213,8 @@ questions.forEach((q) => {
   const answersEl = document.createElement("div");
   q.answers.forEach((a) => {
     const answerEl = document.createElement("label");
-    answerEl.setAttribute("for", `${q.id}${a.value}`);
-    answerEl.innerHTML = `<input type="radio" id="${q.id}${a.value}" name="${q.id}${index}" value="${a.value}" /> ${a.text}`;
+    answerEl.setAttribute("for", `${q.id}-${index}${a.value}`);
+    answerEl.innerHTML = `<input type="radio" id="${q.id}-${index}${a.value}" name="${q.id}-${index}" value="${a.value}" /> ${a.text}`;
     answersEl.appendChild(answerEl);
     const br = document.createElement("br");
     answersEl.appendChild(br);
