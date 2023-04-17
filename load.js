@@ -128,7 +128,7 @@ const questions = [
       { text: "Es gibt kein erstes Element", value: "d" },
     ],
     id: "q6",
-    correctAnswer: "c",
+    correctAnswer: "a",
   },
   {
     question:
@@ -140,7 +140,7 @@ const questions = [
       { text: "myArray[] = {5};", value: "d" },
     ],
     id: "q6",
-    correctAnswer: "b",
+    correctAnswer: "c",
   },
   {
     question: "Was ist eine Methode in der Programmierung?",
@@ -188,7 +188,7 @@ const questions = [
       { text: "Eine Anweisung", value: "d" },
     ],
     id: "q8",
-    correctAnswer: "a",
+    correctAnswer: "c",
   },
   {
     question: "Was ist ein Objekt in der Programmierung?",
@@ -199,7 +199,7 @@ const questions = [
       { text: "Ein spezielles Zeichen in der Syntax", value: "d" },
     ],
     id: "q8",
-    correctAnswer: "a",
+    correctAnswer: "c",
   },
 ];
 
