@@ -223,4 +223,18 @@ questions.forEach((q) => {
   const container = document.getElementById(q.id);
   container.appendChild(questionElement);
   container.appendChild(answersEl);
+
+  // add event listener to each answer option to check for correct answer
+  const answerEls = answersEl.querySelectorAll("input[type=radio]");
+  answerEls.forEach((el) => {
+    el.addEventListener("change", () => {
+      const selectedAnswer = el.value;
+      if (selectedAnswer === q.correctAnswer) {
+
+        el.classList.add("isCorrect");
+      } else {
+        console.log("Incorrect answer selected for question", el.name);
+      }
+    });
+  });
 });

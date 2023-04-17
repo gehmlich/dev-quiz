@@ -55,13 +55,23 @@ input[type="radio"] {
   height: 14px;
   border: 2px solid #ffffff;
   outline: none;
-  transition: border-color 0.2s;
 }
 
-input[type="radio"]:checked {
+input[type="radio"]:hover {
   background-color: #dd33fa;
   border-color: #dd33fa;
   color: #fff;
+  transition: all 1s ease;
+}
+
+input[type="radio"].isCorrect:checked {
+  background-color: #33fa5b;
+  border-color: #33fa5b;
+}
+
+input[type="radio"].isIncorrect:checked {
+  background-color: #fa5b33;
+  border-color: #fa5b33;
 }
 
 button[type="submit"] {
